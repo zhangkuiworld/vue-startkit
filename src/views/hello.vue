@@ -1,7 +1,6 @@
 <template>
     <strong>
         {{vueMsg}}<br>
-        <span>fuck you shit!</span><br>
         <input type="text" v-model="name"><br>
         <p>my name is:{{name}}</p>
     </strong>
@@ -10,8 +9,8 @@
     module.exports =  {
         data:function() {
             return {
-                vueMsg:'Vue hello world',
-                name:'zhangkui'
+                vueMsg:'Hello, this is hello page',
+                name:'zhang kui'
             }
         }
     }
