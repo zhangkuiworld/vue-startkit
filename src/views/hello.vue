@@ -1,25 +1,18 @@
 <template>
-    <strong>
-        {{vueMsg}}<br>
+    <div class="img_content">
         <input type="text" v-model="name"><br>
         <p>my name is:{{name}}</p>
-    </strong>
+    </div>
 </template>
 <script>
     module.exports =  {
         data:function() {
             return {
-                vueMsg:'Hello, this is hello page',
-                name:'zhang kui'
+                name:'Zhang Kui'
             }
         }
     }
 </script>
 <style lang="less">
-    strong{
-        & span{
-            color:blue;
-          }
-        color:red;
-    }
+
 </style>

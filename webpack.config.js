@@ -14,23 +14,13 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.css$/,
-                loader: 'style!css'
-            },
-            {
-                test:/\.vue$/,
-                loader:'vue'
-            },
-            {
-                test: /\.less$/,
-                loader: "style!css!less"
-            },
-            {
-                test: /\.js$/,
-                loader: 'babel?presets=es2015',
-                exclude: /node_modules/
-            }
+            {test: /\.css$/,loader: 'style!css'},
+            {test: /\.vue$/,loader:'vue'},
+            {test: /\.less$/,loader: "style!css!less"},
+            {test: /\.js$/,loader: 'babel?presets=es2015',exclude: /node_modules/},
+            /*图片转成base64后不怎么起作用*/
+            /*{test: /\.(jpg|png)$/, loader: "url?limit=8192"},*/
+            {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,loader: 'file'}
         ]
     },
     watch:true,
@@ -45,6 +35,6 @@ module.exports = {
                warnings: false
              },
              except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }),
+        })
     ]
 }

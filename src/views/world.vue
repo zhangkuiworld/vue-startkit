@@ -1,27 +1,20 @@
 <template>
-   <center>
-       <h1>I am world page! {{msg}}</h1>
-       <h2>
-           <p>less is awesome!</p>
-       </h2>
-   </center>
+    <strong>
+        <input type="text" v-model="name"><br>
+        <p>my name is:{{name}}</p>
+    </strong>
 </template>
 <script>
     module.exports =  {
         data:function() {
             return {
-                msg:'Hello world from world page.'
+                name:'Zlatan'
             }
         }
     }
 </script>
 <style lang="less">
-    h1{
-        color: pink;
-    }
-    h2{
-        & p{
-            color:blue;
-          }
+    strong{
+        color:red;
     }
 </style>

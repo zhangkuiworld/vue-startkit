@@ -4,6 +4,8 @@ let VueResource = require("vue-resource");
 const helloVue = require('./views/hello.vue');
 const worldVue = require('./views/world.vue');
 
+import './less/index.less'
+
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
