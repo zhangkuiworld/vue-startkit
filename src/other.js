@@ -1,0 +1,1 @@
+console.log("just test multiple entry points");
