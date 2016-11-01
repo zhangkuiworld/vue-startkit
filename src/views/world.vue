@@ -5,10 +5,10 @@
     </div>
 </template>
 <script>
-    module.exports =  {
-        data:function() {
+    export default{
+        data(){
             return {
-                name:'Zlatan'
+                name:"zlatan"
             }
         }
     }
