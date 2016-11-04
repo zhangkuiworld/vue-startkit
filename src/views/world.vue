@@ -1,6 +1,6 @@
 <template>
     <div class="world">
-        <input type="text" v-model="name"><br>
+        <input type="text" v-model="name">  <br>
         <p class="desc">This is World Page……</p>
     </div>
 </template>
